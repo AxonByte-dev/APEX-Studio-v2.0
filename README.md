@@ -1,6 +1,6 @@
 # 🚀 APEX Studio v2.0 - Local AI Workspace
 > 🧠 **Developer Note:** Created by an 11-year-old developer.
-
+🐛 *If you find any bugs or have ideas for improvements, please report them in the Issues tab!*
 An advanced, premium desktop dashboard designed to orchestrate and interface with multiple local Large Language Models (LLMs) completely offline. Built from scratch to bypass expensive cloud API keys and put a mini-data center right on your desk.
 
 ---
