@@ -27,7 +27,23 @@ This workspace is dynamically built to hook into Ollama's local engine, managing
 * **The VRAM Sweet-Spots:** `phi3:3.8b` & `gemma2:2b`
 
 ## 🛠️ How to Setup & Run
+
 1. Download and install [Ollama](https://ollama.com).
-2. Open your system Terminal or Command Prompt and download the model matrix:
-   ```bash
-   ollama pull qwen2.5-coder:3b && ollama pull qwen2.5-coder:7b && ollama pull deepseek-r1:7b && ollama pull qwen2.5-coder:1.5b && ollama pull qwen2.5-coder:0.5b && ollama pull llama3.1:8b && ollama pull mistral:7b && ollama pull phi3:3.8b && ollama pull gemma2:2b && ollama pull codellama:7b
+2. Open your system's terminal application and run the bulk download command that matches your Operating System to install the 10-model matrix:
+
+### 🪟 For Windows Users
+
+* **If using PowerShell (Recommended default):**
+    ```powershell
+    ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b; ollama pull qwen2.5-coder:1.5b; ollama pull qwen2.5-coder:0.5b; ollama pull llama3.1:8b; ollama pull mistral:7b; ollama pull phi3:3.8b; ollama pull gemma2:2b; ollama pull codellama:7b
+    ```
+* **If using Command Prompt (Legacy CMD):**
+    ```cmd
+    ollama pull qwen2.5-coder:3b && ollama pull qwen2.5-coder:7b && ollama pull deepseek-r1:7b && ollama pull qwen2.5-coder:1.5b && ollama pull qwen2.5-coder:0.5b && ollama pull llama3.1:8b && ollama pull mistral:7b && ollama pull phi3:3.8b && ollama pull gemma2:2b && ollama pull codellama:7b
+    ```
+
+### 🍎 For macOS & 🐧 Linux Users
+Mac and Linux systems use a Bash/Zsh terminal environment. They chain commands using a single semicolon space wrapper:
+
+```bash
+ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b; ollama pull qwen2.5-coder:1.5b; ollama pull qwen2.5-coder:0.5b; ollama pull llama3.1:8b; ollama pull mistral:7b; ollama pull phi3:3.8b; ollama pull gemma2:2b; ollama pull codellama:7b
