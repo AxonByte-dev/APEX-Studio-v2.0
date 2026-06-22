@@ -30,36 +30,18 @@ This workspace is dynamically built to hook into Ollama's local engine, managing
 ---
 
 ## 🛠️ How to Setup & Run
+### Step 1: Download Local Models via Ollama
 
-### Step 1: Install Ollama & Pull the Models
-1. Download and install [Ollama](https://ollama.com) for your operating system.
-2. Open your terminal application and run the bulk download command that matches your computer to pull the 10-model matrix:
+Make sure you have Ollama installed, then run the appropriate command for your operating system:
 
 #### 🪟 For Windows Users (PowerShell)
-```powershell
-ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b; ollama pull qwen2.5-coder:1.5b; ollama pull qwen2.5-coder:0.5b; ollama pull llama3.1:8b; ollama pull mistral:7b; ollama pull phi3:3.8b; ollama pull gemma2:2b; ollama pull codellama:7b
-🪟 For Windows Users (Legacy CMD)
-ollama pull qwen2.5-coder:3b && ollama pull qwen2.5-coder:7b && ollama pull deepseek-r1:7b && ollama pull qwen2.5-coder:1.5b && ollama pull qwen2.5-coder:0.5b && ollama pull llama3.1:8b && ollama pull mistral:7b && ollama pull phi3:3.8b && ollama pull gemma2:2b && ollama pull codellama:7b
-🍎 For macOS & 🐧 Linux Users
-ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b; ollama pull qwen2.5-coder:1.5b; ollama pull qwen2.5-coder:0.5b; ollama pull llama3.1:8b; ollama pull mistral:7b; ollama pull phi3:3.8b; ollama pull gemma2:2b; ollama pull codellama:7b
+ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b
 
-Step 2: Prepare Your System Environment
-To let the app communicate safely with your local models across all platforms, execute the package setup matching your OS framework:
-🪟 Windows Terminal:
-python -m pip install requests
-🍎 macOS / 🐧 Linux Terminal:
-python3 -m pip install requests
-(Make sure the Ollama desktop application is actively running in your system tray background so the local server is open!)
 
-Step 3: Launch the APEX Studio Dashboard
-Download this repository's source code files and extract the folder.
+#### 🪟 For Windows Users (Legacy CMD)
+ollama pull qwen2.5-coder:3b && ollama pull qwen2.5-coder:7b && ollama pull deepseek-r1:7b
 
-Open your terminal or command prompt inside the extracted project folder.
 
-Launch your custom local AI environment by running:
-🪟 Windows:
-python apex_ai.py
-🍎 macOS / 🐧 Linux:
-python3 apex_ai.py
-
-Your custom UI window will pop up. Select any downloaded model from your custom dropdown bar, type your query, and start generating completely local, secure AI responses!
+#### 🍎 For macOS & 🐧 Linux Users
+ollama pull qwen2.5-coder:3b; ollama pull qwen2.5-coder:7b; ollama pull deepseek-r1:7b
+Your custom UI window will pop up. Select any downloaded model from your custom dropdown bar, type your prompt, and start building!
